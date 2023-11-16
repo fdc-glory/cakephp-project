@@ -48,3 +48,15 @@ Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
 #2 {main}
+2023-11-16 06:12:40 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /cakephp-project/Users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Users/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
