@@ -1,0 +1,4 @@
+
+class UsersController extends AppsController {
+    
+}
