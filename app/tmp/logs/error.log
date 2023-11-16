@@ -1,0 +1,50 @@
+2023-11-16 03:52:11 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/index.php/cakephp-project/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
+#2 {main}
+2023-11-16 03:52:38 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/index.php/cakephp-project/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
+#2 {main}
+2023-11-16 03:53:52 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/index.php/cakephp-project/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
+#2 {main}
+2023-11-16 03:54:28 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/index.php/cakephp-project/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
+#2 {main}
+2023-11-16 03:57:40 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/index.php/cakephp-project/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/index.php(41): require('/Applications/X...')
+#2 {main}
