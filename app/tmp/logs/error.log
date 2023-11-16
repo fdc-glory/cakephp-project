@@ -180,3 +180,47 @@ Stack Trace:
 #9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2023-11-16 09:39:55 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-16 09:40:05 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /cakephp-project/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Users/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-16 09:40:10 Error: [MissingViewException] View file "Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/add.ctp',
+)
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Users/add')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-16 09:43:25 Error: [MissingActionException] Action UsersController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit',
+)
+Request URL: /cakephp-project/Users/edit
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
