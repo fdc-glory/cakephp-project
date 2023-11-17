@@ -33,7 +33,9 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
     public $components = array(
-        'Flash',
-        'DebugKit.Toolbar'
+        // 'Flash',
+        'DebugKit.Toolbar',
+        'Session',
+        'Auth' 
     );
 }

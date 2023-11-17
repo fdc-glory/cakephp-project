@@ -224,3 +224,468 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2023-11-17 02:23:37 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'user_name' doesn't have a default value
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(24): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 02:24:28 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'user_name' doesn't have a default value
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(24): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 02:24:38 Error: [MissingActionException] Action UsersController::add.ctp() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.ctp',
+)
+Request URL: /cakephp-project/Users/add.ctp
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 02:24:59 Error: [MissingActionException] Action UsersController::add.ctp() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.ctp',
+)
+Request URL: /cakephp-project/Users/add.ctp
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 02:26:28 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'user_name' doesn't have a default value
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(24): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 02:33:22 Error: [CakeException] Method getData does not exist
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(16): CakeRequest->__call('getData', Array)
+#1 [internal function]: UsersController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-17 02:39:41 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'date_joined' doesn't have a default value
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(27): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 02:53:48 Error: [MissingActionException] Action UsersController::thankyou() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'thankyou',
+)
+Request URL: /cakephp-project/Users/thankyou
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:02:31 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:04 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:23 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:28 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:03:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 03:09:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123@gmail.com' for key 'email'
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(39): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 03:30:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test124@gmail.com' for key 'email'
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(40): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 03:34:47 Error: [Error] Call to undefined method View::redirect()
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2023-11-17 03:56:35 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'email' doesn't have a default value
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(51): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 04:13:17 Error: [MissingControllerException] Controller class MessageController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/Message
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-17 04:13:26 Error: [MissingControllerException] Controller class MessageController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/Message
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-17 04:56:05 Error: [MissingActionException] Action UsersController::chrome.css.map() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'chrome.css.map',
+)
+Request URL: /cakephp-project/users/chrome.css.map
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-17 06:07:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'glorymae@test.com' for key 'email'
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(63): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 06:08:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'glorymae@test.com' for key 'email'
+Request URL: /cakephp-project/Users/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(63): Model->save(Array)
+#6 [internal function]: UsersController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-17 06:31:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#9 [internal function]: UsersController->login()
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2023-11-17 06:32:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#9 [internal function]: UsersController->login()
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2023-11-17 06:33:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#9 [internal function]: UsersController->login()
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2023-11-17 06:36:33 Error: [MissingTableException] Table messages for model Message was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'messages',
+  'class' => 'Message',
+  'ds' => 'default',
+)
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3686): Model->setSource('messages')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(2663): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1886): DboSource->fields(Object(AppModel), 'Message', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1377): DboSource->generateAssociationQuery(Object(User), Object(AppModel), 'hasMany', 'Message', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#11 [internal function]: UsersController->login()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2023-11-17 06:41:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.user_id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Message...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1564): DboSource->fetchAll('SELECT `Message...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1398): DboSource->_fetchHasMany(Object(User), 'SELECT `Message...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#11 [internal function]: UsersController->login()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2023-11-17 06:43:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.user_id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Message...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1564): DboSource->fetchAll('SELECT `Message...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1398): DboSource->_fetchHasMany(Object(User), 'SELECT `Message...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(29): Model->__call('findByEmail', Array)
+#11 [internal function]: UsersController->login()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2023-11-17 06:45:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.user_id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Message...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1564): DboSource->fetchAll('SELECT `Message...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1398): DboSource->_fetchHasMany(Object(User), 'SELECT `Message...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(25): Model->__call('findByEmail', Array)
+#11 [internal function]: UsersController->login()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2023-11-17 06:46:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.user_id' in 'field list'
+Request URL: /cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Message...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1564): DboSource->fetchAll('SELECT `Message...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1398): DboSource->_fetchHasMany(Object(User), 'SELECT `Message...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(834): DboSource->query('findByEmail', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/UsersController.php(25): Model->__call('findByEmail', Array)
+#11 [internal function]: UsersController->login()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
