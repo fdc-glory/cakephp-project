@@ -1,0 +1,46 @@
+2023-11-17 04:31:21 Debug: Array
+(
+    [User] => Array
+        (
+            [user_name] => testlog
+            [email] => testlog@test.com
+            [password] => 12345678
+            [confirm_password] => 12345678
+        )
+
+)
+
+2023-11-17 04:32:09 Debug: Array
+(
+    [User] => Array
+        (
+            [email] => testlog@test.com
+            [password] => 12345678
+        )
+
+)
+
+2023-11-17 04:32:11 Debug: Array
+(
+    [User] => Array
+        (
+            [email] => testlog@test.com
+            [password] => 12345678
+        )
+
+)
+
+2023-11-17 04:32:14 Debug: Array
+(
+)
+
+2023-11-17 04:32:25 Debug: Array
+(
+    [User] => Array
+        (
+            [email] => testlog@test.com
+            [password] => 12345678
+        )
+
+)
+
