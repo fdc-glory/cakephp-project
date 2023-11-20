@@ -92,7 +92,6 @@
                     $user_name = $this->data['User']['user_name'];
                     $email = $this->data['User']['email'];
                     $password = password_hash($this->data['User']['password'], PASSWORD_DEFAULT);
-                    // echo $password;
                     $date_joined = date('Y-m-d H:i:s');
                     $login_time = date('Y-m-d H:i:s');
             
@@ -130,8 +129,12 @@
         }
 
         public function edit($user_id){
-
             $data = $this->User->findByUserId($user_id);
+
+            $this->request->data = $data;
+        }
+
+        public function update($user_id){
 
             if ($this->request->is(array('post','put'))) {
                 
@@ -150,7 +153,7 @@
 
                 } else {
                     // No new file uploaded, retain the existing value
-                    $this->request->data['User']['profile_img'] = $data['User']['profile_img'];
+                    $this->request->data['User']['profile_img'] = $this->User->field('profile_img', ['user_id' => $user_id]);
 
                 }
                 
@@ -178,10 +181,9 @@
                 }
 
             }
-
-            $this->request->data = $data;
-            
         }
+
+        
 
         public function thankyou(){
 

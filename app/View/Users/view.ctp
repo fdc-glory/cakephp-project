@@ -33,7 +33,7 @@
             [
                 'alt' => 'Profile Image',
                 'width' => 150, 
-                'height' => 150, 
+                'height' => 170, 
             ]
         );
     ?>

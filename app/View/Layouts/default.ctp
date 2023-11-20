@@ -47,7 +47,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<?php echo $current_user['user_name']; ?> <?php echo $this->HTML->link('Logout', array('controller'=>'users', 'action' => 'logout')) ?>
 			<?php else: ?>
 				<?php echo $this->HTML->link('Login', array('controller'=>'users', 'action' => 'login')) ?>
-			<?php endif; ?>
+			<?php endif ?>
 			</div>
 
 			<?php echo $this->Flash->render(); ?>

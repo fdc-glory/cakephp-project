@@ -1,3 +1,8 @@
+<h2>
+    Update Profile
+</h2>
+
+
 <?php 
     if (!empty($this->validationErrors['User'])): ?>
         <div class="error-message">
@@ -16,21 +21,22 @@
         </div>
 <?php endif; ?>
 
-<?= $this->Form->create("User", ['type' => 'file']); ?>
+<img id="image-preview" src="#" alt="Preview" style="max-width: 100%; max-height: 150px; display: none;">
 
-
-    <img id="image-preview" src="#" alt="Preview" style="max-width: 100%; max-height: 150px; display: none;">
-
-<?= $this->Form->file('profile_img', ['type' => 'file', 'id' => 'img_form']); ?>
-
-
-<?= $this->Form->input("user_name"); ?>
-<?= $this->Form->input("email"); ?>
-<?= $this->Form->input("password", ['type' => 'password', 'value' => '', 'placeholder' => 'Enter your password']); ?>
-<?= $this->Form->input("birthdate", ['id' => 'UserBirthdate']); //jquery ?>
-<?= $this->Form->radio('gender', ['male' => 'Male', 'female' => 'Female']); ?>
-<?= $this->Form->textarea("hubby"); ?>
-<?= $this->Form->end("Update"); ?>
+<?php
+    echo $this->Form->create("User", [
+        'type' => 'file',
+        'url' => ['controller' => 'users', 'action'=> 'update']
+    ]); 
+    echo $this->Form->file('profile_img', ['type' => 'file', 'id' => 'img_form']); 
+    echo $this->Form->input("user_name"); 
+    echo $this->Form->input("email"); 
+    echo $this->Form->input("password", ['type' => 'password', 'value' => '', 'placeholder' => 'Enter your password']); 
+    echo $this->Form->input("birthdate", ['id' => 'UserBirthdate']); //jquery 
+    echo $this->Form->radio('gender', ['male' => 'Male', 'female' => 'Female']); 
+    echo $this->Form->textarea("hubby"); 
+    echo $this->Form->end("Update"); 
+?>
 
 <!-- Image preview section -->
 
@@ -38,7 +44,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#UserProfileImg').change(function () {
+        $('#img_form').change(function () {
             var file = this.files[0];
 
             if (file) {
@@ -52,15 +58,15 @@
             }
         });
 
-        //birthdate datepicker
-        $("#UserBirthdate").datepicker({
-            dateFormat: "yy-mm-dd",  // Set the desired date format
-            changeYear: true,        // Allow changing the year
-            yearRange: "1900:+0",    // Set the range of years
-            // Add more options as needed
-        });
+        //birthdate datepicker - not functioning
+        // $("#UserBirthdate").datepicker({
+        //     dateFormat: "yy-mm-dd",  // Set the desired date format
+        //     changeYear: true,        // Allow changing the year
+        //     yearRange: "1900:+0",    // Set the range of years
+        // });
     });
 </script>
+
 
 <style>
 
@@ -75,3 +81,4 @@
         float: left;
     }
 </style>
+
