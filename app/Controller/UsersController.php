@@ -6,8 +6,19 @@
         public $components = array("Session");
 
         public function beforeFilter(){
+            parent::beforeFilter();
             $this->Auth->allow('add');
         }
+
+        public function isAuthorized($user){
+            if(in_array($this->action, array('edit','delete'))){
+                if($user['user_id'] != $this->request->params['pass'][0]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        
 
         public function login(){
             // Check if the user is already authenticated
@@ -30,8 +41,12 @@
                     
                     if (password_verify($password, $db_pass)) {
 
-                        // Manually log in the user
+                        // Authenticate the user
                         $this->Auth->login($user['User']);
+
+                        // Update login_time
+                        $this->User->id = $user['User']['user_id'];
+                        $this->User->saveField('last_login_time', date('Y-m-d H:i:s'));
 
                         // Redirect after successful login
                         return $this->redirect($this->Auth->redirectUrl());
@@ -106,8 +121,66 @@
         
         
 
-        public function edit(){
+        public function view($user_id){
 
+            $data = $this->User->findByUserId($user_id);
+
+            $this->set('user', $data);
+
+        }
+
+        public function edit($user_id){
+
+            $data = $this->User->findByUserId($user_id);
+
+            if ($this->request->is(array('post','put'))) {
+                
+                $this->request->data['User']['user_id'] = $user_id;
+
+                //IMAGE UPLOAD
+
+                $rootfolder = WWW_ROOT . 'img/uploads/' ;
+                $img = $this->request->data["User"]["profile_img"]; //put the data into a var for easy use
+                
+                if (is_uploaded_file($img['tmp_name'])) {
+
+                    // The file was successfully uploaded
+                    move_uploaded_file($img['tmp_name'], $rootfolder . $img['name']);
+                    $this->request->data['User']['profile_img'] = $img['name'];
+
+                } else {
+                    // No new file uploaded, retain the existing value
+                    $this->request->data['User']['profile_img'] = $data['User']['profile_img'];
+
+                }
+                
+                // Check if the password is being updated
+                if (!empty($this->request->data['User']['password'])) {
+
+                    // Hash the new password
+                    $this->request->data['User']['password'] = password_hash(
+                        $this->request->data['User']['password'],
+                        PASSWORD_DEFAULT
+                    );
+
+                } else {
+
+                    // If the password is not being updated, remove it from the data
+                    unset($this->request->data['User']['password']);
+
+                }
+
+                if($this->User->save($this->request->data)){
+
+                    $this->Session->setFlash('Account has been edited');
+                    $this->redirect(array('controllers' => 'users', 'action'=> 'view', $user_id));
+
+                }
+
+            }
+
+            $this->request->data = $data;
+            
         }
 
         public function thankyou(){

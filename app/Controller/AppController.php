@@ -38,4 +38,15 @@ class AppController extends Controller {
         'Session',
         'Auth' 
     );
+
+    public function isAuthorized($user) {
+
+        return true;
+    }
+
+    public function beforeFilter() {
+        $this->Auth->allow('index');
+        $this->set('logged_in', $this->Auth->loggedIn());
+        $this->set('current_user', $this->Auth->user());
+    }
 }

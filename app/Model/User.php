@@ -7,8 +7,14 @@
         // In User.php (Model)
         public $validate = [
             'user_name' => [
-                'rule' => 'notBlank',
-                'message' => 'Please enter a username.',
+                'notBlank' => [
+                    'rule' => 'notBlank',
+                    'message' => 'Please enter a username.',
+                ],
+                'length' => [
+                    'rule' => ['lengthBetween', 5, 20],
+                    'message' => 'Username should be between 5 and 20 characters.',
+                ],
             ],
             'email' => array(
                 'emailRule' => array(
@@ -16,23 +22,18 @@
                     'message' => 'Please enter a valid email address.'
                 ), 
                 'uniqueEmail' => array(
-                    'rule' => 'isUnique',
+                    'rule' => array('isUnique', array('email', 'user_id')),
                     'message' => 'This email has already been taken'
                 )
             ),
+            
             'password' => [
                 'rule' => ['minLength', 6],
                 'message' => 'Password must be at least 6 characters long.',
             ],
+            
         ];
 
-        // public function beforeSaved() {
-        //     if (isset($this->data['User']['password'])) {
-
-        //         $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-        //     }
-        //     return true;
-        // }
 
 
     }
