@@ -36,7 +36,7 @@ class AppController extends Controller {
         // 'Flash',
         'DebugKit.Toolbar',
         'Session',
-        'Auth' 
+        'Auth'
     );
 
     public function isAuthorized($user) {
@@ -46,7 +46,9 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         $this->Auth->allow('index');
-        $this->set('logged_in', $this->Auth->loggedIn());
+        $this->set('logged_in', $this->Auth->loggedIn()); 
         $this->set('current_user', $this->Auth->user());
+
+        
     }
 }

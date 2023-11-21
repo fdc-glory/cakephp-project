@@ -1331,3 +1331,445 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2023-11-21 03:21:26 Error: [Error] Call to a member function getConnection() on null
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-21 03:22:53 Error: [Error] Call to a member function query() on bool
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-21 03:25:07 Error: [Error] Call to a member function find() on bool
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-21 03:26:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':user_id
+                GROUP BY chat.chat_id, chat.created_at
+             ...' at line 10
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT\n        ...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('\n              ...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll('\n              ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(30): DboSource->query('\n              ...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 03:27:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':user_id
+                GROUP BY chat.chat_id, chat.created_at
+             ...' at line 10
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT\n        ...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('\n              ...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll('\n              ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(30): DboSource->query('\n              ...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 03:27:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':user_id
+                GROUP BY chat.chat_id, chat.created_at
+             ...' at line 10
+Request URL: /cakephp-project/messages/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT\n        ...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('\n              ...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll('\n              ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(30): DboSource->query('\n              ...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 03:46:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':user_id
+                GROUP BY chat.chat_id, chat.created_at
+             ...' at line 10
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT\n        ...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('\n              ...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll('\n              ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(30): DboSource->query('\n              ...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 05:47:32 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/%3Cpre%20class=
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:48:11 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/%3Cpre%20class=
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:49:53 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/%3Cpre%20class=
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:52:18 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:09 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:09 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:22 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:22 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:41 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:53:57 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:54:12 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:54:30 Error: [ArgumentCountError] Too few arguments to function UsersController::view(), 0 passed and exactly 1 expected
+Request URL: /cakephp-project/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-21 05:55:15 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:55:16 Error: [ArgumentCountError] Too few arguments to function UsersController::view(), 0 passed and exactly 1 expected
+Request URL: /cakephp-project/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-21 05:55:40 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:55:58 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:57:17 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:57:25 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 05:57:46 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:39 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:41 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:47 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:47 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:48 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:48 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:49 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:49 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:49 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:50 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:50 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:51 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:02:58 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:03:41 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:04:19 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:04:29 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:04:39 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:04:42 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:04:54 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 06:05:47 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/uploads/Cat03.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
