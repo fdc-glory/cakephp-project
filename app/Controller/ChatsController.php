@@ -57,8 +57,7 @@
                         if ($this->Chat->save(['last_message_sent' => $chat_text])) {
 
                             $this->ChatHistory->save([
-                                'from_user' => $loggedInUserId,
-                                'to_user' => $user_id,
+                                'chat_id' => $chat['Chat']['chat_id'],
                                 'msg_content' => $chat_text,
                                 'created_at' => date('Y-m-d H:i:s'),
                             ]);
@@ -77,9 +76,12 @@
                             'receive_id' => $user_id,
                             'last_message_sent' => $chat_text
                         ])) {
+
+                            // Get the ID of the newly created chat
+                            $chatId = $this->Chat->getLastInsertID();
+
                             $this->ChatHistory->save([
-                                'from_user' => $loggedInUserId,
-                                'to_user' => $user_id,
+                                'chat_id' => $chatId,
                                 'msg_content' => $chat_text,
                                 'created_at' => date('Y-m-d H:i:s'),
                             ]);
