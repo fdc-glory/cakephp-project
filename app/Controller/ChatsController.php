@@ -36,6 +36,7 @@
                     ],
                 ],
                 'fields' => [
+                    'Chat.chat_id',
                     'Chat.sender_id',
                     'Chat.receive_id',
                     'Chat.last_message_sent',
@@ -118,7 +119,37 @@
         }
         
 
-        public function view(){
+        public function view($chat_id){
+
+            $chat_details = $this->ChatHistory->find('all', [
+                'joins' => [
+                    [
+                        'table' => 'chats',
+                        'alias' => 'c',
+                        'type' => 'INNER',
+                        'conditions' => 'ChatHistory.chat_id = c.chat_id'
+                    ],
+                    [
+                        'table' => 'users',
+                        'alias' => 'u',
+                        'type' => 'INNER',
+                        'conditions' => 'c.receive_id = u.user_id',
+                    ]
+                ],
+                'conditions' => [
+                    'ChatHistory.chat_id' => $chat_id
+                ],
+                'fields' => [
+                    'ChatHistory.msg_content',
+                    'ChatHistory.created_at',
+                    'c.sender_id',
+                    'c.receive_id',
+                    'u.profile_img'
+                ],
+                'order' => ['ChatHistory.created_at' => 'DESC']
+            ]);
+
+            $this->set('chat_details', $chat_details);
             
         }
         

@@ -12,9 +12,9 @@
 <h3>Chat Messages</h3>
 
 <?php foreach ($chats as $chat): ?>
-    <div class="chat-list">
+    <div class="chats">
         <div class="chat-content">
-            <p><?= h($chat["Chat"]["last_message_sent"]) ?></p>
+            <p><?= $this->HTML->link($chat["Chat"]["last_message_sent"], ['controller' => 'chats', 'action' => 'view', $chat["Chat"]["chat_id"]]) ?></p>
             <small><?= h($chat["ch"]["last_message_created_at"]) ?> </small>
         </div>
         <?php if (!empty($chat['u']['profile_img'])): ?>
@@ -26,8 +26,8 @@
 <?php endforeach; ?>
 
 <style>
-    .chat-list {
-        border: 2px solid #333; 
+    .chats {
+        border: 1px solid #333; 
         padding: 5px; 
         margin-top: 2px;
         overflow: hidden; /* Clear the float to contain the image within the container */

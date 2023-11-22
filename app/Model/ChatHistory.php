@@ -4,14 +4,11 @@
         public $useTable = 'chat_history';
 
         public $belongsTo = array(
-            'Receiver' => array(
-                'className' => 'User',
-                'foreignKey' => 'to_user'
+            'Chats' => array(
+                'className' => 'Chat',
+                'foreignKey' => 'chat_id'
             ),
-            'Sender' => array(
-                'className' => 'User',
-                'foreignKey' => 'from_user'
-            ),
+
         );
     }
 ?>
