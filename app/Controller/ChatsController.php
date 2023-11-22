@@ -9,6 +9,22 @@
         public function index() {
             $userId = $this->Auth->user('user_id');
             $this->set('user_id', $userId);
+
+            // Fetch records from the "chats" table
+            $chats = $this->Chat->find('all', [
+                'fields' => ['last_message_sent'],
+                'conditions' => [
+                    'OR' => [
+                        'sender_id' => 2,
+                        'receive_id' => 2
+                    ]
+                ]
+            ]);
+
+            // debug($chats);
+            // exit;
+
+            $this->set('chats', $chats);
     
         }
         

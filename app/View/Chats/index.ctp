@@ -8,7 +8,18 @@
     echo $this->Form->button('New Message', ['type' => 'submit', 'class' => 'button-class']);
     echo $this->Form->end();
 ?>
-<br>
+
+<h3>Chat Messages</h3>
+
+<?php foreach ($chats as $chat): ?>
+    <div class="chat-list">
+        <div class="chat-content">
+            <p><?= h($chat["Chat"]["last_message_sent"]) ?></p>
+        </div>
+    </div>
+<?php endforeach; ?>
+
+
 
 
 
