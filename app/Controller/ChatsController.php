@@ -12,13 +12,36 @@
 
             // Fetch records from the "chats" table
             $chats = $this->Chat->find('all', [
-                'fields' => ['last_message_sent'],
+                'joins' => [
+                    [
+                        'table' => 'chat_history',
+                        'alias' => 'ch',
+                        'type' => 'INNER',
+                        'conditions' => 'Chat.chat_id = ch.chat_id',
+                    ],
+                    [
+                        'table' => 'users',
+                        'alias' => 'u',
+                        'type' => 'INNER',
+                        'conditions' => 'Chat.receive_id = u.user_id',
+                    ],
+                ],
                 'conditions' => [
-                    'OR' => [
-                        'sender_id' => 2,
-                        'receive_id' => 2
-                    ]
-                ]
+                    'AND' => [
+                        'OR' => [
+                            'Chat.sender_id' => $this->Auth->user('user_id'),
+                            'Chat.receive_id' => $this->Auth->user('user_id'),
+                        ],
+                        'Chat.last_message_sent = ch.msg_content',
+                    ],
+                ],
+                'fields' => [
+                    'Chat.sender_id',
+                    'Chat.receive_id',
+                    'Chat.last_message_sent',
+                    'ch.created_at AS last_message_created_at',
+                    'u.profile_img',
+                ],
             ]);
 
             // debug($chats);
