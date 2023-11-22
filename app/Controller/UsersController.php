@@ -83,12 +83,14 @@
         
             if ($this->request->is('post')) {
 
+                //condition: check if password match
                 if ($this->data["User"]["password"] != $this->data["User"]["password_confirmation"]) {
 
                     $this->Session->setFlash("Password not match.");                
 
                 } else {
 
+                    //get data
                     $user_name = $this->data['User']['user_name'];
                     $email = $this->data['User']['email'];
                     $password = password_hash($this->data['User']['password'], PASSWORD_DEFAULT);

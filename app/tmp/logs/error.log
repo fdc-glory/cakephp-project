@@ -1910,3 +1910,678 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2023-11-22 02:13:06 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'cakephp_db\'',
+  'enabled' => true,
+)
+Request URL: /apps/cakephp-project/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/View.php(971): include('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#13 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2023-11-22 02:24:01 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:09 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:12 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:16 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:18 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:21 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-22 02:25:25 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp_db.messages' doesn't exist
+Request URL: /apps/cakephp-project/Chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT c.chat_i...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute(' SELECT c.chat_...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll(' SELECT c.chat_...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(31): DboSource->query(' SELECT c.chat_...')
+#5 [internal function]: ChatsController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-22 02:27:19 Error: [ArgumentCountError] Too few arguments to function UsersController::view(), 0 passed and exactly 1 expected
+Request URL: /apps/cakephp-project/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 03:01:42 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 03:02:59 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 03:04:16 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 03:05:55 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:18:11 Error: [Error] Call to a member function save() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:19:07 Error: [Error] Call to a member function save() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:26:47 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:27:28 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:27:34 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:28:05 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:28:12 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:30:32 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:30:39 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:31:27 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:31:30 Error: [Error] Call to a member function find() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:32:48 Error: [Error] Call to a member function select() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:33:40 Error: [Error] Call to a member function first() on array
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:36:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cakephp_db`.`chat_participants`, CONSTRAINT `fk_CpChats` FOREIGN KEY (`chat_id`) REFERENCES `chats` (`chat_id`))
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO cha...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('\n              ...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(648): DboSource->fetchAll('\n              ...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3489): DboSource->query('\n              ...', Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(60): Model->query('\n              ...', Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 04:38:56 Error: [Error] Call to a member function query() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 04:56:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Chat.user_id' in 'where clause'
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT COUNT(*)...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Chat), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('count', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(39): Model->find('count', Array)
+#7 [internal function]: ChatsController->add()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-22 05:03:07 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'vfvbefbebew' for column `cakephp_db`.`chat_history`.`msg_content` at row 1
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(ChatHistory), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(54): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 05:22:53 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'hvrhyreyrwjyr' for column `cakephp_db`.`chat_history`.`msg_content` at row 1
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(ChatHistory), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(54): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 05:42:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'receiver_id' in 'where clause'
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Chat`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Chat`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `Chat`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Chat), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->find('first', Array)
+#7 [internal function]: ChatsController->add()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-22 06:08:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Chat.id' in 'field list'
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `Chat`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `Chat`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `Chat`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Chat), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(53): Model->find('first', Array)
+#7 [internal function]: ChatsController->add()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-22 06:08:49 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(63): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:10:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(63): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:15:17 Error: [Error] Call to a member function success() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 06:18:16 Error: [Error] Call to a member function success() on null
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 [internal function]: ChatsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-22 06:31:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(66): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:32:50 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(68): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:33:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(68): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:33:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(67): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:33:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(67): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:34:36 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:35:19 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:35:32 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:36:33 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:37:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:37:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:38:54 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:39:07 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:39:12 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:39:43 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'sender_id' doesn't have a default value
+Request URL: /apps/cakephp-project/chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(46): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:40:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(66): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:42:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(66): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-22 06:45:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(62): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
