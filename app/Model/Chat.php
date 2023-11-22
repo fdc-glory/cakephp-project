@@ -1,6 +1,6 @@
 <?php
 
-    class Message extends AppModel{
+    class Chat extends AppModel{
 
         public $primaryKey = 'msg_id';
     }

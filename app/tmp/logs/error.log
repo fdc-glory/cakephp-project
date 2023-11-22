@@ -1773,3 +1773,140 @@ Request URL: /cakephp-project/uploads/Cat03.jpg
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2023-11-21 08:47:28 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp_db.messages' doesn't exist
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT c.chat_i...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute(' SELECT c.chat_...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll(' SELECT c.chat_...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(31): DboSource->query(' SELECT c.chat_...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 08:50:50 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp_db.messages' doesn't exist
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT c.chat_i...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute(' SELECT c.chat_...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll(' SELECT c.chat_...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(31): DboSource->query(' SELECT c.chat_...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 08:52:06 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-21 08:52:19 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-21 08:52:22 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-21 08:52:30 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-21 08:53:24 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp_db.messages' doesn't exist
+Request URL: /cakephp-project/Messages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT c.chat_i...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute(' SELECT c.chat_...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(581): DboSource->fetchAll(' SELECT c.chat_...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/Controller/MessagesController.php(31): DboSource->query(' SELECT c.chat_...')
+#5 [internal function]: MessagesController->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-21 08:53:38 Error: [MissingTableException] Table messages for model Message was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'messages',
+  'class' => 'Message',
+  'ds' => 'default',
+)
+Request URL: /cakephp-project/Messages/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(3686): Model->setSource('messages')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Message', 'fields')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/View/Messages/add.ctp(4): FormHelper->create('Message', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(971): include('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-21 08:56:39 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/Messages/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 08:57:00 Error: [MissingControllerException] Controller class ChatsController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-21 08:57:13 Error: [MissingViewException] View file "Chats/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Chats/add.ctp',
+)
+Request URL: /cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Chats/add')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

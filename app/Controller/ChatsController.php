@@ -2,7 +2,7 @@
 
     App::uses('User', 'Model');
 
-    class MessagesController extends AppController {
+    class ChatsController extends AppController {
 
         public function index() {
             $userId = $this->Auth->user('user_id');
@@ -10,7 +10,7 @@
 
 
              // Get the model for Messages
-            $messagesModel = $this->loadModel('Messages');
+            $chatModel = $this->loadModel('Chat');
 
             // Write the raw SQL query
             
@@ -38,6 +38,11 @@
 
         public function new_message(){
             
+            
+        } 
+        
+        public function add() {
+
             $this->loadModel('User');
 
             //populating dropdown with users.
@@ -45,16 +50,10 @@
                 'fields' => ['user_id', 'user_name']
             ]);
             $this->set('userData', $userData);
-        } 
-        
-        public function add() {
-            // Use $this->request->data to access form data
-            $receiver = $this->request->data["Message"]["receiver_id"];
-            $content = $this->request->data["Message"]["msg_content"];
-        
-            debug($receiver);
-            debug($content);
-            exit;
+        }
+
+        public function view(){
+            
         }
         
         

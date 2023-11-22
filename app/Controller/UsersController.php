@@ -23,7 +23,7 @@
         public function login(){
             // Check if the user is already authenticated
             if ($this->Auth->user()) {
-                return $this->redirect(array('controller' => 'Messages', 'action' => 'index'));
+                return $this->redirect(array('controller' => 'Users', 'action' => 'index'));
             }
 
             //Auth login() but problem with hash password
