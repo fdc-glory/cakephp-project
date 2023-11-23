@@ -33,16 +33,17 @@
     $(document).ready(function () {
         $('#replyBtn').click(function (e) {
             e.preventDefault();
-
+            
             var replyContent = $('#msg_content').val();
             <?php echo "var chatId = " . json_encode($chat_id) . ";"; ?>
 
+            $('#msg_content').val("");
+            
             $.ajax({
                 type: 'POST',
                 url: '/apps/cakephp-project/chats/reply',
                 data: {replyContent: replyContent, chatId: chatId},
                 success: function (data) {
-                    $('#msg_content').val("");
 
                 },
                 error: function (xhr, textStatus, errorThrown) {

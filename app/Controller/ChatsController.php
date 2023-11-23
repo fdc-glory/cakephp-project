@@ -177,6 +177,7 @@
             $this->autoRender = false;
         
             if ($this->request->is('ajax')) {
+
                 $replyContent = $this->request->data('replyContent');
                 $chatId = $this->request->data('chatId');
 
@@ -191,25 +192,39 @@
 
                 if ($this->ChatHistory->save($dataToSave)) {
                     
-                    //update chats table
+
                     $chat = $this->Chat->findByChatId($chatId);
-                    // Check if the chat record was found
+                    $chat_id = $chat["Chat"]["chat_id"];
+                    $user_id = $this->Auth->user('user_id');
+
+                    $result = $this->Chat->find('first', array(
+                        'fields' => array(
+                            '(CASE WHEN Chat.receive_id = ' . $user_id . ' THEN Chat.sender_id WHEN Chat.sender_id = ' . $user_id . ' THEN Chat.receive_id ELSE NULL END) AS receiveId'
+                        ),
+                        'conditions' => array(
+                            'Chat.chat_id' => $chat_id
+                        ),
+                        'recursive' => -1
+                    ));
+                    
+                    $receiveId = isset($result[0]['receiveId']) ? $result[0]['receiveId'] : null;
+
+
                     if ($chat) {
                         $this->Chat->id = $chat['Chat']['chat_id'];
                         $this->Chat->save([
+                            'sender_id' => $user_id,
+                            'receive_id' => $receiveId,
                             'last_message_sent'=> $replyContent
                         ]);
                     } else {
-                        // Handle the case when the chat record is not found
+
                         echo json_encode(['status' => 'error', 'message' => 'Chat record not found']);
                         return;
                     }
 
 
                 }
-                
-        
-                
 
             }
         }
