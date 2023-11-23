@@ -222,14 +222,10 @@
                         echo json_encode(['status' => 'error', 'message' => 'Chat record not found']);
                         return;
                     }
-
-
                 }
 
             }
         }
-        
-        
-        
+
     }
 ?>

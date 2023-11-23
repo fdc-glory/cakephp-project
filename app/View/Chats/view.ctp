@@ -32,7 +32,6 @@
 <script>
     $(document).ready(function () {
         $('#replyBtn').click(function (e) {
-            e.preventDefault();
             
             var replyContent = $('#msg_content').val();
             <?php echo "var chatId = " . json_encode($chat_id) . ";"; ?>
