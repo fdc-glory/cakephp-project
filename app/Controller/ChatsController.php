@@ -69,16 +69,33 @@
                 $chat = $this->Chat->find('first', [
                     'fields' => ['chat_id'],
                     'conditions' => [
-                        'sender_id' => $loggedInUserId,
-                        'receive_id' => $user_id
-                    ]
+                        'OR' => [
+                            [
+                                'AND' => [
+                                    'sender_id' => $loggedInUserId,
+                                    'receive_id' => $user_id,
+                                ],
+                            ],
+                            [
+                                'AND' => [
+                                    'sender_id' => $user_id,
+                                    'receive_id' => $loggedInUserId,
+                                ],
+                            ],
+                        ],
+                    ],
                 ]);
+                
 
                 if ($chat) {
                     // If the chat exists, update it
                     if ($this->request->is(['post', 'put'])) {
                         $this->Chat->id = $chat['Chat']['chat_id'];
-                        if ($this->Chat->save(['last_message_sent' => $chat_text])) {
+                        if ($this->Chat->save([
+                            'sender_id' => $loggedInUserId,
+                            'receive_id' => $user_id,
+                            'last_message_sent' => $chat_text
+                        ])) {
 
                             $this->ChatHistory->save([
                                 'chat_id' => $chat['Chat']['chat_id'],
@@ -149,9 +166,54 @@
                 'order' => ['ChatHistory.created_at' => 'DESC']
             ]);
 
+            // debug($chat_details);
+
             $this->set('chat_details', $chat_details);
+            $this->set('chat_id', $chat_id);
             
         }
+
+        public function reply() {
+            $this->autoRender = false;
+        
+            if ($this->request->is('ajax')) {
+                $replyContent = $this->request->data('replyContent');
+                $chatId = $this->request->data('chatId');
+
+                // Simulate saving to the database
+                $this->loadModel('ChatHistory');
+                
+                $dataToSave = array(
+                    'chat_id' => $chatId,
+                    'msg_content' => $replyContent,
+                    'created_at' => date('Y-m-d H:i:s')
+                );
+
+                if ($this->ChatHistory->save($dataToSave)) {
+                    
+                    //update chats table
+                    $chat = $this->Chat->findByChatId($chatId);
+                    // Check if the chat record was found
+                    if ($chat) {
+                        $this->Chat->id = $chat['Chat']['chat_id'];
+                        $this->Chat->save([
+                            'last_message_sent'=> $replyContent
+                        ]);
+                    } else {
+                        // Handle the case when the chat record is not found
+                        echo json_encode(['status' => 'error', 'message' => 'Chat record not found']);
+                        return;
+                    }
+
+
+                }
+                
+        
+                
+
+            }
+        }
+        
         
         
     }

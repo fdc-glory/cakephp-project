@@ -32,11 +32,14 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+    public $helpers = array('Js');
+
     public $components = array(
         // 'Flash',
         'DebugKit.Toolbar',
         'Session',
-        'Auth'
+        'Auth',
+        'RequestHandler'
     );
 
     public function isAuthorized($user) {

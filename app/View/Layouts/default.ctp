@@ -17,6 +17,8 @@
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
+
+<?php echo $this->HTML->script('jquery', FALSE); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +35,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+
+		echo $scripts_for_layout;
+
 	?>
+
+	<!-- Include jQuery (you might need to adjust the path to your jQuery file) -->
+	<!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
 </head>
 <body>
 	<div id="container">
