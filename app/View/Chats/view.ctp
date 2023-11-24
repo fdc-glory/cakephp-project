@@ -20,7 +20,7 @@
             <small><?= h($chat_detail["ChatHistory"]["created_at"]) ?></small>
             
         </div>
-        
+
         <?php if (!empty($chat['u']['profile_img'])): ?>
             <img class="profile-img" src="<?= ('img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
         <?php else: ?>
@@ -29,7 +29,14 @@
         
     </div>
 
-<?php endforeach; ?>
+<?php endforeach;
+
+    echo $this->Paginator->prev(__('« previous '));
+    echo $this->Paginator->numbers();
+    echo $this->Paginator->next(__(' next »'));
+?>
+
+
 
 <script>
     $(document).ready(function () {

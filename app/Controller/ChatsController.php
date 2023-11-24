@@ -13,7 +13,17 @@
             $this->set('user_id', $userId);
 
             // Fetch records from the "chats" table
-            $chats = $this->Chat->find('all', [
+            $this->Paginator->settings = array(
+                'limit' => 10, 
+                'conditions' => [
+                    'AND' => [
+                        'OR' => [
+                            'Chat.sender_id' => $this->Auth->user('user_id'),
+                            'Chat.receive_id' => $this->Auth->user('user_id'),
+                        ],
+                        'Chat.last_message_sent = ch.msg_content',
+                    ],
+                ],
                 'joins' => [
                     [
                         'table' => 'chat_history',
@@ -28,15 +38,7 @@
                         'conditions' => 'Chat.receive_id = u.user_id',
                     ],
                 ],
-                'conditions' => [
-                    'AND' => [
-                        'OR' => [
-                            'Chat.sender_id' => $this->Auth->user('user_id'),
-                            'Chat.receive_id' => $this->Auth->user('user_id'),
-                        ],
-                        'Chat.last_message_sent = ch.msg_content',
-                    ],
-                ],
+                
                 'fields' => [
                     'Chat.chat_id',
                     'Chat.sender_id',
@@ -45,9 +47,10 @@
                     'ch.created_at AS last_message_created_at',
                     'u.profile_img',
                 ],
-            ]);
+            );
 
             // debug($chats);
+            $chats = $this->Paginator->paginate('Chat');
             $this->set('chats', $chats);
     
         }
@@ -138,7 +141,9 @@
 
         public function view($chat_id){
 
-            $chat_details = $this->ChatHistory->find('all', [
+            $this->Paginator->settings = array(
+                'limit' => 10, 
+                'conditions' => array('ChatHistory.chat_id' => $chat_id),
                 'joins' => [
                     [
                         'table' => 'chats',
@@ -153,9 +158,6 @@
                         'conditions' => 'c.receive_id = u.user_id',
                     ]
                 ],
-                'conditions' => [
-                    'ChatHistory.chat_id' => $chat_id
-                ],
                 'fields' => [
                     'ChatHistory.msg_content',
                     'ChatHistory.created_at',
@@ -164,10 +166,11 @@
                     'u.profile_img'
                 ],
                 'order' => ['ChatHistory.created_at' => 'DESC']
-            ]);
+            );
 
-            // debug($chat_details);
 
+            $chat_details = $this->Paginator->paginate('ChatHistory');
+    
             $this->set('chat_details', $chat_details);
             $this->set('chat_id', $chat_id);
             

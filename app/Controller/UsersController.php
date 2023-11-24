@@ -10,20 +10,21 @@
             $this->Auth->allow('add');
         }
 
+        
         public function isAuthorized($user){
-            if(in_array($this->action, array('edit','delete'))){
+            
+            if(in_array($this->action, array('index','edit','delete', 'view'))){
                 if($user['user_id'] != $this->request->params['pass'][0]){
                     return false;
                 }
             }
             return true;
         }
-        
 
         public function login(){
             // Check if the user is already authenticated
             if ($this->Auth->user()) {
-                return $this->redirect(array('controller' => 'Users', 'action' => 'index'));
+                return $this->redirect(array('controller' => 'chats', 'action' => 'index'));
             }
 
             //Auth login() but problem with hash password

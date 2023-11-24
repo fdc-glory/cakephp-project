@@ -11,18 +11,23 @@ class AppController extends Controller {
         // 'Flash',
         'DebugKit.Toolbar',
         'Session',
-        'Auth',
+        'Auth' => array(
+            'loginRedirect' => ['controller'=> 'chats', 'action' => 'index'],
+            'logoutRedirect' => ['controller' => 'users', 'action' => 'login'],
+            'authError' => "You can't access that page",
+            'authorize' => ['Controller']
+        ),
         'RequestHandler',
         'Paginator'
     );
 
-    public function isAuthorized($user) {
-
+    public function isAuthorized($user){
+            
         return true;
     }
 
     public function beforeFilter() {
-        $this->Auth->allow('index');
+        // $this->Auth->allow('index');
         $this->set('logged_in', $this->Auth->loggedIn()); 
         $this->set('current_user', $this->Auth->user());
 

@@ -7811,3 +7811,738 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2023-11-24 08:15:04 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:15:19 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:15:26 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:15:33 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:23:15 Error: [NotFoundException] Not Found
+Request URL: /apps/cakephp-project/chats/view/11/page:2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(170): PaginatorComponent->paginate(Object(ChatHistory))
+#1 [internal function]: ChatsController->view('11')
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:23:23 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:23:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:24:18 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:24:21 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:24:27 Error: [MissingModelException] Chats
+Request URL: /apps/cakephp-project/chats/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(51): PaginatorComponent->paginate('Chats')
+#1 [internal function]: ChatsController->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:25:13 Error: [MissingModelException] Chats
+Request URL: /apps/cakephp-project/chats/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(51): PaginatorComponent->paginate('Chats')
+#1 [internal function]: ChatsController->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:25:36 Error: [MissingModelException] Chats
+Request URL: /apps/cakephp-project/chats/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(52): PaginatorComponent->paginate('Chats')
+#1 [internal function]: ChatsController->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:26:02 Error: [MissingModelException] Chats
+Request URL: /apps/cakephp-project/chats/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(53): PaginatorComponent->paginate('Chats')
+#1 [internal function]: ChatsController->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:26:08 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:26:11 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:26:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:26:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(121): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-24 08:26:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'receive_id' cannot be null
+Request URL: /apps/cakephp-project/Chats/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ca...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Chat), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(121): Model->save(Array)
+#6 [internal function]: ChatsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2023-11-24 08:27:58 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:27:58 Error: [MissingActionException] Action ChatsController::cakephp-project() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'cakephp-project',
+)
+Request URL: /apps/cakephp-project/chats/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:28:35 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:28:52 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:28:59 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:29:01 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:30:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:30:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/new-aspect-ratio.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:30:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:38:03 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:38:06 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:38:58 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:39:01 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:39:03 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:39:11 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:39:14 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:39:16 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:40:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:40:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/new-aspect-ratio.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:40:42 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:40:44 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:40:47 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:41:16 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:41:19 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:41:36 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:41:51 Error: [ParseError] syntax error, unexpected 'return' (T_RETURN)
+Request URL: /apps/cakephp-project/users/view/1
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:41:51 Error: [ParseError] syntax error, unexpected 'return' (T_RETURN)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2023-11-24 08:41:59 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:42:08 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:42:28 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:42:30 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:42:31 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:42:31 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:42:43 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:42:43 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:43:10 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:43:10 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:43:39 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:44:21 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:44:28 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /apps/cakephp-project/chats/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(72): ControllerAuthorize->controller(Object(ChatsController))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Component/AuthComponent.php(505): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Component/AuthComponent.php(467): AuthComponent->constructAuthorize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Component/AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Utility/ObjectCollection.php(129): AuthComponent->startup(Object(ChatsController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Event/CakeEventManager.php(244): ObjectCollection->trigger('startup')
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2023-11-24 08:45:39 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:39 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/new-aspect-ratio.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:39 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:48 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:48 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/new-aspect-ratio.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:48 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:50 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-24 08:45:52 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:53 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/cakephp-project/chats
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:53 Error: [MissingControllerException] Controller class AppsController could not be found.
+Exception Attributes: array (
+  'class' => 'AppsController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/apps/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:57 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:57 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/new-aspect-ratio.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-24 08:45:57 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/dog.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
