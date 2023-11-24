@@ -28,20 +28,20 @@
         'type' => 'file',
         'url' => ['controller' => 'users', 'action'=> 'update']
     ]); 
-    echo $this->Form->file('profile_img', ['type' => 'file', 'id' => 'img_form']); 
+    echo $this->Form->file('profile_img', ['type' => 'file', 'id' => 'img_form', 'required' => false]); 
     echo $this->Form->input("user_name"); 
     echo $this->Form->input("email"); 
     echo $this->Form->input("password", ['type' => 'password', 'value' => '', 'placeholder' => 'Enter your password']); 
-    echo $this->Form->input("birthdate", ['id' => 'UserBirthdate']); //jquery 
+    echo $this->Form->input("birthdate", ['type' => 'text','id' => 'datepicker']); 
     echo $this->Form->radio('gender', ['male' => 'Male', 'female' => 'Female']); 
-    echo $this->Form->textarea("hubby"); 
+    echo $this->Form->textarea("hubby",[ "placeholder" => "Input your hubbies"]); 
     echo $this->Form->end("Update"); 
 ?>
 
-<!-- Image preview section -->
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+<!-- <div id="datepicker">
+        <h2>jQuery ui</h2>
+    </div> -->
 <script>
     $(document).ready(function () {
         $('#img_form').change(function () {
@@ -58,12 +58,11 @@
             }
         });
 
-        //birthdate datepicker - not functioning
-        // $("#UserBirthdate").datepicker({
-        //     dateFormat: "yy-mm-dd",  // Set the desired date format
-        //     changeYear: true,        // Allow changing the year
-        //     yearRange: "1900:+0",    // Set the range of years
-        // });
+        $("#datepicker").datepicker({
+            dateFormat: 'yy-mm-dd' // Set the date format to "yyyy-mm-dd"
+        });
+
+        
     });
 </script>
 

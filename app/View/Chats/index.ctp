@@ -16,43 +16,77 @@
         <div class="chat-content">
             <p><?= $this->HTML->link($chat["Chat"]["last_message_sent"], ['controller' => 'chats', 'action' => 'view', $chat["Chat"]["chat_id"]]) ?></p>
             <small><?= h($chat["ch"]["last_message_created_at"]) ?> </small>
+            <button 
+                class="close-btn" 
+                onclick="deleteChat(<?= h($chat["Chat"]["chat_id"]); ?>)"
+            >
+                delete
+            </button>
+
+            <!-- image here -->
         </div>
-        <?php if (!empty($chat['u']['profile_img'])): ?>
-            <img class="profile-img" src="<?= ('img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
-        <?php else: ?>
-            <!-- If no profile image is available, display a default image -->
-        <?php endif; ?>
+        
+
+        
     </div>
 <?php endforeach; ?>
+
+<script>
+
+    function deleteChat(chatId) {
+        $.ajax({
+            type: 'POST',
+            url: '/apps/cakephp-project/chats/delete',
+            data: {chatId:chatId},
+            success: function(response) {
+                console.log('Response:', response);
+            },
+            error:function (xhr, textStatus, errorThrown) {
+                console.error('Error submitting delete:', errorThrown);
+            }
+        });
+    }
+
+</script>
 
 <style>
     .chats {
         border: 1px solid #333; 
         padding: 5px; 
         margin-top: 2px;
-        overflow: hidden; /* Clear the float to contain the image within the container */
+        overflow: hidden; 
     }
 
     .chat-content {
-        float: left; /* Float the text content to the left */
-        width: calc(100% - 120px); /* Adjust the width based on the image width and margin */
+        float: left; 
+        width: calc(100% - 120px); 
     }
 
     p {
-        margin: 0; /* Remove default margin from paragraphs */
+        margin: 0; 
     }
 
     small {
-        display: block; /* Make the timestamp a block element to appear on a new line */
+        display: block; 
         margin-top: 5px;
     }
 
     img.profile-img {
         width: 75px;
         height: 75px;
-        margin-left: 10px; /* Optional: Add margin to the left of the image for spacing */
-        float: right; /* Float the image to the right */
+        margin-left: 10px; 
+        float: right; 
     }
+    .close-btn {
+        margin-top: 20px; 
+        margin-left: 5px;
+        cursor: pointer;
+        border: 1px;
+        font-size: 12px;
+        color: #333;
+        float: left; 
+    }
+
 </style>
 
 

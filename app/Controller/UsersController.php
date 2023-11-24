@@ -131,7 +131,10 @@
             $data = $this->User->findByUserId($user_id);
 
             $this->request->data = $data;
+
+            // $this->set('user_id', $data["User"]["user_id"]);
         }
+
 
         public function update($user_id){
 
@@ -139,16 +142,19 @@
                 
                 $this->request->data['User']['user_id'] = $user_id;
 
-                //IMAGE UPLOAD
-
                 $rootfolder = WWW_ROOT . 'img/uploads/' ;
                 $img = $this->request->data["User"]["profile_img"]; //put the data into a var for easy use
                 
+                if (!isset($img) || empty($img['tmp_name'])) {
+                    return;
+                }
                 if (is_uploaded_file($img['tmp_name'])) {
 
                     // The file was successfully uploaded
                     move_uploaded_file($img['tmp_name'], $rootfolder . $img['name']);
                     $this->request->data['User']['profile_img'] = $img['name'];
+
+                    // debug($img["name"]);
 
                 } else {
                     // No new file uploaded, retain the existing value
@@ -177,6 +183,11 @@
                     $this->Session->setFlash('Account has been edited');
                     $this->redirect(array('controllers' => 'users', 'action'=> 'view', $user_id));
 
+                } else {
+
+                    $this->Session->setFlash('Error editing account. Please fix the errors.');
+                    $this->redirect(array('controllers' => 'users', 'action'=> 'edit', $user_id));
+                    
                 }
 
             }

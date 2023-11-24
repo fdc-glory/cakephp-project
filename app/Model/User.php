@@ -31,8 +31,35 @@
                 'rule' => ['minLength', 6],
                 'message' => 'Password must be at least 6 characters long.',
             ],
+            'profile_img' => [
+                'validImageExtension' => [
+                    'rule' => ['validateImageExtension'],
+                    'message' => 'Please upload a valid image file (jpg, jpeg, gif, png).',
+                    'allowEmpty' => true,
+                ]
+            ]
             
         ];
+
+        public function validateImageExtension() {
+
+
+            if (empty($this->data['User']['profile_img'])) {
+                return true;  
+            }
+
+            $img = $this->data['User']['profile_img'];
+        
+            // Get the file extension
+            $extension = pathinfo($img, PATHINFO_EXTENSION);
+
+            
+            // Allowed extensions
+            $allowedExtensions = ['jpg', 'jpeg', 'gif', 'png'];
+        
+            // Check if the extension is in the allowed list
+            return in_array(strtolower($extension), $allowedExtensions);
+        }
 
 
 
