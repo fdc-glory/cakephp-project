@@ -23,7 +23,6 @@
                 delete
             </button>
 
-            <!-- image here -->
         </div>
         
         <?php if (!empty($chat['u']['profile_img'])): ?>

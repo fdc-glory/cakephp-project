@@ -54,7 +54,8 @@
             $this->set('chats', $chats);
     
         }
-        
+
+
         public function add() {
             $loggedInUserId = $this->Auth->user('user_id');
         
@@ -65,7 +66,7 @@
             ]);
             $this->set('userData', $userData);
         
-            if ($this->request->is('post')) {
+            if ($this->request->is('post') && !empty($this->request->data["Chat"]["user_id"])) {
                 $user_id = $this->request->data["Chat"]["user_id"];
                 $chat_text = $this->request->data["Chat"]["chat_text"];
         
@@ -238,17 +239,12 @@
                 $chatId = $this->request->data['chatId'];
                 
                 $this->loadModel('ChatHistory');
-                if ($this->ChatHistory->query("DELETE FROM chat_history WHERE chat_id = $chatId")){
-                    $this->loadModel('Chat');
-                    if ($this->Chat->query("DELETE FROM chats WHERE chat_id = $chatId")) {
-                        // Flash message for success
-                        $this->Session->setFlash('Chat and chat history deleted successfully.', 'success');
-                    } else {
-                        // Flash message for failure (if the second delete fails)
-                        $this->Session->setFlash('Error deleting chat from the "chats" table.', 'error');
-                    }
+                $this->loadModel('Chat');
 
-                }
+                $this->Chat->query("DELETE FROM chats WHERE chat_id = $chatId");
+                $this->ChatHistory->query("DELETE FROM chat_history WHERE chat_id = $chatId");
+
+                $this->Session->setFlash('Chat and chat history deleted successfully.');
 
             }
         }

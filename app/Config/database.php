@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'cakephp_db',
+		'database' => 'fdc_Glory',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
