@@ -26,7 +26,11 @@
             <!-- image here -->
         </div>
         
-
+        <?php if (!empty($chat['u']['profile_img'])): ?>
+            <img class="profile-img" src="<?= ('../cakephp-project/app/webroot/img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
+        <?php else: ?>
+            <!-- If no profile image is available, display a default image -->
+        <?php endif; ?>
         
     </div>
 <?php endforeach; ?>

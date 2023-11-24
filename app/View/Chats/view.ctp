@@ -25,7 +25,6 @@
         <?php else: ?>
             <!-- If no profile image is available, display a default image -->
         <?php endif; ?>
-
         
     </div>
 
