@@ -20,6 +20,7 @@
             <small><?= h($chat_detail["ChatHistory"]["created_at"]) ?></small>
             
         </div>
+        
         <?php if (!empty($chat['u']['profile_img'])): ?>
             <img class="profile-img" src="<?= ('img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
         <?php else: ?>
