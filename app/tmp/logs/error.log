@@ -9673,3 +9673,1378 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2023-11-27 08:33:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'fdc_glory\'',
+  'enabled' => true,
+)
+Request URL: /apps/cakephp-project/users/edit/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(834): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/UsersController.php(132): Model->__call('findByUserId', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-27 08:34:19 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-27 08:34:19 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-27 08:34:50 Error: [MissingControllerException] Controller class Cakephp-projectController could not be found.
+Exception Attributes: array (
+  'class' => 'Cakephp-projectController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/cakephp-project/app/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-27 08:36:15 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /apps/cakephp-project/webroot/img/uploads/download.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2023-11-27 08:36:43 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:36:49 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:37:43 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:45:16 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/users/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:45:41 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:47:16 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:47:28 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:47:41 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:49:06 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 08:50:13 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:06:26 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:07:01 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:07:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:08:40 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:10:52 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:11:15 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:11:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:11:55 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:12:02 Error: [MissingViewException] View file "Chats/delete_chat_detail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Chats/delete_chat_detail.ctp',
+)
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Chats/delete_ch...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:12:13 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:12:15 Error: [MissingViewException] View file "Chats/delete_chat_detail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Chats/delete_chat_detail.ctp',
+)
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/View/View.php(470): View->_getViewFileName('Chats/delete_ch...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:13:32 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:14:58 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:15:21 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:15:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:20:35 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:20:38 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:21:08 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:21:11 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:21:49 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:21:51 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:23:49 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:23:51 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:24:56 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:25:31 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:26:01 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:26:03 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:27:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:27:53 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:29:35 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:29:37 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:32:12 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:32:14 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:34:58 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:35:00 Error: [Error] Call to a member function matching() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:35:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:35:36 Error: [Error] Call to a member function matching() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:36:18 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:37:22 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:37:24 Error: [Error] Call to a member function count() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:37:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:39:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:39:53 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 09:41:56 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:42:01 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:42:03 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:42:15 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:43:28 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:43:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:43:41 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:44:11 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:44:17 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:44:24 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:57:55 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:57:59 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 09:58:05 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:04:45 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:04:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:05:19 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:06:24 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:06:29 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:06:37 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:10:01 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:10:05 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:10:15 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:11:18 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:11:22 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:11:24 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:11:27 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:14:14 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:17:24 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:17:28 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:17:39 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:19:33 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:19:37 Error: [Error] Call to a member function where() on array
+Request URL: /apps/cakephp-project/chats/deleteChatDetail
+Stack Trace:
+#0 [internal function]: ChatsController->deleteChatDetail()
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2023-11-27 10:21:45 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:22:15 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:23:23 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:23:45 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:24:07 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:27:01 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:27:18 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:27:20 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:27:39 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:33:40 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:34:02 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:36:33 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:38:55 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:39:10 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:40:02 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:41:51 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:42:00 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:43:12 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:43:17 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:43:24 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:44:55 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:45:02 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:45:06 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:46:31 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:46:34 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:47:12 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:47:15 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:47:41 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:49:49 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:51:40 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:51:59 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:52:02 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:52:06 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:52:52 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:53:10 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:53:14 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2023-11-27 10:53:18 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

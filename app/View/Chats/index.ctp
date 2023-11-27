@@ -17,7 +17,7 @@
             <p><?= $this->HTML->link($chat["Chat"]["last_message_sent"], ['controller' => 'chats', 'action' => 'view', $chat["Chat"]["chat_id"]]) ?></p>
             <small><?= h($chat["ch"]["last_message_created_at"]) ?> </small>
             <button 
-                class="close-btn" 
+                class="delete-btn" 
                 onclick="deleteChat(<?= h($chat["Chat"]["chat_id"]); ?>)"
             >
                 delete
@@ -26,7 +26,7 @@
         </div>
         
         <?php if (!empty($chat['u']['profile_img'])): ?>
-            <img class="profile-img" src="<?= ('../cakephp-project/app/webroot/img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
+            <img class="profile-img" src="<?= ('../app/webroot/img/uploads/' . $chat['u']['profile_img']) ?>" alt="Profile Image">
         <?php else: ?>
             <!-- If no profile image is available, display a default image -->
         <?php endif; ?>
@@ -84,7 +84,7 @@
         margin-left: 10px; 
         float: right; 
     }
-    .close-btn {
+    .delete-btn {
         margin-top: 20px; 
         margin-left: 5px;
         cursor: pointer;

@@ -2,8 +2,6 @@
 
 <h2>Message Details</h2>
 
-
-
 <?php 
 
     echo $this->Form->create(null, ['id' => 'replyForm']);
@@ -11,14 +9,14 @@
     echo $this->Form->submit('Reply Message', ['id'=>'replyBtn']);
     echo $this->Form->end();
 
-
+    
     foreach ($chat_details as $chat_detail): ?>
 
     <div class="chats">
         <div class="chat-content">
             <p><?= h($chat_detail["ChatHistory"]["msg_content"]) ?></p>
             <small><?= h($chat_detail["ChatHistory"]["created_at"]) ?></small>
-            
+            <button class="delete-btn" id="deleteBtn" value="<?= h($chat_detail["ChatHistory"]["ch_id"]) ?>">delete</button>
         </div>
 
         <?php if (!empty($chat['u']['profile_img'])): ?>
@@ -40,10 +38,14 @@
 
 <script>
     $(document).ready(function () {
+
+        var chatId;
+
+        <?php echo "chatId = " . json_encode($chat_id) . ";"; ?>
+
         $('#replyBtn').click(function () {
             
             var replyContent = $('#msg_content').val();
-            <?php echo "var chatId = " . json_encode($chat_id) . ";"; ?>
 
             $('#msg_content').val("");
             
@@ -59,6 +61,29 @@
                 }
             });
         });
+
+        $('#deleteBtn').click(function() {
+            var chId = $(this).val();
+
+            var confirmDelete = confirm('Are you sure you want to delete?'); 
+
+            if (confirmDelete) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/apps/cakephp-project/chats/deleteChatDetail',
+                    data: {chId:chId, chatId:chatId},
+                    success: function(response){
+
+                        location.reload(); // Reload the page
+                        
+                    },
+                    error: function(error) {
+                        console.error('Error in delete: ', error);
+                    }
+                })
+            }
+            
+        })
     });
 </script>
 
@@ -83,6 +108,15 @@
         float: right; 
     }
 
+    .delete-btn{
+        margin-top: 25px; 
+        margin-left: 5px;
+        cursor: pointer;
+        border: 1px;
+        font-size: 10px;
+        color: #333;
+        float: left; 
+    }
     
 
 </style>

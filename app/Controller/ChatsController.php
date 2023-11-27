@@ -59,14 +59,6 @@
         public function add() {
             $loggedInUserId = $this->Auth->user('user_id');
         
-            // Populating dropdown with users excluding the currently logged-in user
-            // $userData = $this->User->find('list', [
-            //     'conditions' => ['User.user_id !=' => $loggedInUserId],
-            //     'fields' => ['user_id', 'user_name']
-            // ]);
-            // $this->set('userData', $userData);
-
-            debug($this->request->data);
         
             if ($this->request->is('post') && !empty($this->request->data["Chat"]["user_id"])) {
                 $user_id = $this->request->data["Chat"]["user_id"];
@@ -178,6 +170,7 @@
                     ]
                 ],
                 'fields' => [
+                    'ChatHistory.ch_id',
                     'ChatHistory.msg_content',
                     'ChatHistory.created_at',
                     'c.sender_id',
@@ -189,7 +182,7 @@
 
 
             $chat_details = $this->Paginator->paginate('ChatHistory');
-    
+            // debug($chat_details);
             $this->set('chat_details', $chat_details);
             $this->set('chat_id', $chat_id);
             
@@ -264,6 +257,38 @@
 
                 $this->Session->setFlash('Chat and chat history deleted successfully.');
 
+            }
+        }
+
+        public function deleteChatDetail(){
+
+            $this->autoRender = false;
+
+            if ($this->request->is('ajax')) {
+
+                $chId = $this->request->data('chId');
+                $chatId = $this->request->data['chatId'];
+
+                if(!empty($chId)){
+                    $this->loadModel('ChatHistory');
+
+                    $chData = $this->ChatHistory->findByChId($chId);
+
+                    if (!empty($chData)) {
+                        $recordCount = $this->ChatHistory->query("SELECT COUNT(*) AS count FROM chat_history WHERE chat_id = $chatId")[0][0]['count'];
+
+                        if ($recordCount > 1) {
+                            $this->ChatHistory->query("DELETE FROM chat_history WHERE ch_id = $chId");
+                        } elseif ($recordCount == 1) {
+                            $this->ChatHistory->query("DELETE FROM chat_history WHERE ch_id = $chId");
+                            $this->Chat->query("DELETE FROM chats WHERE chat_id = $chatId");
+                        } else {
+                            debug("No records found");
+                        }
+                    }
+                } else{
+                    debug("No chId");
+                }
             }
         }
         
