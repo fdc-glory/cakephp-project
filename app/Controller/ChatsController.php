@@ -60,11 +60,13 @@
             $loggedInUserId = $this->Auth->user('user_id');
         
             // Populating dropdown with users excluding the currently logged-in user
-            $userData = $this->User->find('list', [
-                'conditions' => ['User.user_id !=' => $loggedInUserId],
-                'fields' => ['user_id', 'user_name']
-            ]);
-            $this->set('userData', $userData);
+            // $userData = $this->User->find('list', [
+            //     'conditions' => ['User.user_id !=' => $loggedInUserId],
+            //     'fields' => ['user_id', 'user_name']
+            // ]);
+            // $this->set('userData', $userData);
+
+            debug($this->request->data);
         
             if ($this->request->is('post') && !empty($this->request->data["Chat"]["user_id"])) {
                 $user_id = $this->request->data["Chat"]["user_id"];
@@ -143,18 +145,19 @@
         {       
             $this->autoRender = false;
 
+            $loggedInUserId = $this->Auth->user('user_id');
             $term = $this->request->query('term');
             
             $userData = $this->User->find('all', array(
-                'fields' => array('User.user_id', 'User.user_name', 'User.email'), 
-                'conditions' => array('User.user_name LIKE' => '%' . $term . '%'),
+                'fields' => array('User.user_id', 'User.user_name', 'User.email'),
+                'conditions' => array('User.user_id !=' => $loggedInUserId, 'User.user_name LIKE' => '%' . $term . '%'),
                 'limit' => 10
             ));
+            
 
 
             echo json_encode(array_values($userData));
         }
-
         public function view($chat_id){
 
             $this->Paginator->settings = array(

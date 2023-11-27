@@ -13,6 +13,8 @@
     <div class="search-wrapper">
         <!-- <label for="search" class="search">Search User</label> -->
         <?= $this->Form->input('search', array('type' => 'search', 'id' => 'search', 'data-search' => true)); ?>
+        <?= $this->Form->input('user_id', ['type' => 'hidden', 'id' => 'search-id']) ?>
+
     </div>
     <div class="user-cards" data-user-cards-container></div>
     <template data-user-template>
@@ -53,6 +55,7 @@
     })
 
     $(function() {
+
         $("#search").autocomplete({
             source: function(request, response) {
                 $.ajax({
@@ -73,8 +76,10 @@
                             card.addEventListener("click", function() {
                                 // Access the user_id from the clicked card's data
                                 const userName = user.User.user_name;
-
+                                const userId = user.User.user_id
+                                
                                 $("#search").val(userName);
+                                $("#search-id").val(userId);
                             });
 
                             userCardContainer.append(card)
@@ -88,6 +93,8 @@
             },
             minLength: 2 
         });
+
+        
     });
 
     // END SEARCH USER

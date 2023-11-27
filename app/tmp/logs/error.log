@@ -9206,3 +9206,46 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2023-11-27 06:51:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.1' in 'field list'
+Request URL: /apps/cakephp-project/chats/autocomplete?term=lor
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(152): Model->find('all', Array)
+#7 [internal function]: ChatsController->autocomplete()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-27 06:51:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.1' in 'field list'
+Request URL: /apps/cakephp-project/chats/autocomplete?term=lor
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/Controller/ChatsController.php(152): Model->find('all', Array)
+#7 [internal function]: ChatsController->autocomplete()
+#8 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ChatsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2023-11-27 07:19:16 Error: [MissingActionException] Action ChatsController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatsController',
+  'action' => 'js',
+)
+Request URL: /apps/cakephp-project/chats/js/jquery-ui/jquery-ui.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChatsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/apps/cakephp-project/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
