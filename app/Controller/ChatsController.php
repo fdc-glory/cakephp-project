@@ -146,7 +146,7 @@
             $term = $this->request->query('term');
             
             $userData = $this->User->find('all', array(
-                'fields' => array('User.user_id', 'User.user_name'), 
+                'fields' => array('User.user_id', 'User.user_name', 'User.email'), 
                 'conditions' => array('User.user_name LIKE' => '%' . $term . '%'),
                 'limit' => 10
             ));
