@@ -24,9 +24,10 @@
 <img id="image-preview" src="#" alt="Preview" style="max-width: 100%; max-height: 150px; display: none;">
 
 <?php
+// echo $user_id;
     echo $this->Form->create("User", [
         'type' => 'file',
-        'url' => ['controller' => 'users', 'action'=> 'update']
+        // 'url' => ['controller' => 'users', 'action'=> 'update', $user_id]
     ]); 
     echo $this->Form->file('profile_img', ['type' => 'file', 'id' => 'img_form', 'required' => false]); 
     echo $this->Form->input("user_name"); 
