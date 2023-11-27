@@ -139,6 +139,21 @@
             }
         }
         
+        public function autocomplete()
+        {       
+            $this->autoRender = false;
+
+            $term = $this->request->query('term');
+            
+            $userData = $this->User->find('all', array(
+                'fields' => array('User.user_id', 'User.user_name'), 
+                'conditions' => array('User.user_name LIKE' => '%' . $term . '%'),
+                'limit' => 10
+            ));
+
+
+            echo json_encode(array_values($userData));
+        }
 
         public function view($chat_id){
 
